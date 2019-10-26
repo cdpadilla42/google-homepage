@@ -3,7 +3,9 @@
         <head>
             <title>Google</title>
             <style>
-               
+               body {
+                   font-family: arial, sans-serif;
+               }
                 .logo, .search-bar {
                     display: block;
                     text-align: center;
@@ -27,6 +29,16 @@
                     background-color: grey;
                     color: black;
                 }
+                footer {
+                    position: fixed;
+                    bottom: 0;
+                    background-color: #f2f2f2;
+                    border-top: #e4e4e4;
+                    height: 35px;
+                    width: 100%;
+                    font-size: 13px;
+                    color: #5f6368;
+                }
                 #search {
                     height: 40px;
                     border-radius: 30px;
@@ -36,14 +48,17 @@
                 .left-top, .right-top {
                     display: inline;
                 }
+                .left-bottom, .right-bottom {
+                    display: inline;
+                }
                 li {
                     display: inline;
                     margin: 0px 5px;
                 }
-                .left-top {
+                .left-top, .left-bottom {
                     float: left;
                 }
-                .right-top {
+                .right-top, .right-bottom {
                     float: right;
                     margin: auto;
                 }
@@ -75,11 +90,20 @@
                     <button value="lucky">I'm Feeling Lucky</button>
                 </form>
             </div>
-            <div class="message">
-
-            </div>
-            <!-- <footer>
-                To include site links
-            </footer> -->
+            <!-- <div class="message">
+                    It’s Drug Take Back Day: <a href="www.google.com">Dispose of unneeded medication today before 2 PM</a>
+            </div> -->
+            <footer>
+                <ul class="left-bottom">
+                    <li>Advertising</li>
+                    <li>Business</li>
+                    <li>How Search Works</li>
+                </ul>
+                <ul class="right-bottom">
+                    <li>Privacy</li>
+                    <li>Terms</li>
+                    <li>Settings</li>
+                </ul> 
+            </footer>
         </body>
     </html>
