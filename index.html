@@ -5,8 +5,9 @@
             <style>
                body {
                    font-family: arial, sans-serif;
+                   font-size: 13px;
                }
-                .logo, .search-bar {
+                .logo, .search-bar, .message {
                     display: block;
                     text-align: center;
                     position: relative;
@@ -19,15 +20,20 @@
                     width: 50%;
                     padding: 25px;
                 }
+                .message {
+                    margin-top: 20px;
+                    color: #5f6368;
+                }
                 button {
-                    margin-top: 10px;
+                    margin-top: 20px;
                     padding: 5px;
                     padding-left: 10px;
                     padding-right: 10px;
                     padding-top: 5px;
                     padding-bottom: 5px;
-                    background-color: grey;
-                    color: black;
+                    background-color: #f2f2f2;
+                    color: #5F6368;
+                    border: 1px solid #f2f2f2;
                 }
                 footer {
                     position: fixed;
@@ -36,7 +42,6 @@
                     border-top: #e4e4e4;
                     height: 35px;
                     width: 100%;
-                    font-size: 13px;
                     color: #5f6368;
                 }
                 #search {
@@ -44,6 +49,7 @@
                     border-radius: 30px;
                     width: 450px;
                     padding: 7px;
+                    border: 2px solid #f2f2f2;
                 }
                 .left-top, .right-top {
                     display: inline;
@@ -90,9 +96,9 @@
                     <button value="lucky">I'm Feeling Lucky</button>
                 </form>
             </div>
-            <!-- <div class="message">
+            <div class="message">
                     It’s Drug Take Back Day: <a href="www.google.com">Dispose of unneeded medication today before 2 PM</a>
-            </div> -->
+            </div>
             <footer>
                 <ul class="left-bottom">
                     <li>Advertising</li>
