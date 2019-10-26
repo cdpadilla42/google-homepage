@@ -3,6 +3,7 @@
         <head>
             <title>Google</title>
             <style>
+               
                 .logo, .search-bar {
                     display: block;
                     text-align: center;
@@ -10,8 +11,11 @@
                     top: 165px;
                 }
                 .logo {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 50%;
                     padding: 25px;
-                    line-height: 15px;
                 }
                 button {
                     margin-top: 10px;
@@ -29,20 +33,37 @@
                     width: 450px;
                     padding: 7px;
                 }
+                .left-top, .right-top {
+                    display: inline;
+                }
+                li {
+                    display: inline;
+                    margin: 0px 5px;
+                }
+                .left-top {
+                    float: left;
+                }
+                .right-top {
+                    float: right;
+                    margin: auto;
+                }
                 
             </style>
         </head>
         <body>
 
-            <!-- <header>
-                To include nav bar w/ profile
-
-                Use inline justification
-                <ul>
+            <header>
+                <ul class="left-top">
                     <li>About</li>
                     <li>Store</li>
                 </ul>
-            </header> -->
+                <ul class="right-top">
+                    <li>Gmail</li>
+                    <li>Images</li>
+                    <li>...</li>
+                    <li><img src="https://lh3.googleusercontent.com/-cMtP-JuMgS4/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3reHysMst9vLPfdTF_0C-P8qoMxT7Q.CMID/s32-c/photo.jpg"></li>
+                </ul>
+            </header>
             <div class="logo">
                 <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
             </div>
